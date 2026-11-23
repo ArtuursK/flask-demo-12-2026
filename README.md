@@ -3,7 +3,7 @@
 
 ## Kā palaist savu uzbūvēto image uz linux
 docker-compose.yml failā ielikt klāt
-'''
+```
 services:
 .....
   flask:
@@ -12,13 +12,12 @@ services:
     restart: unless-stopped
     ports:
       - "5001:5000"
-'''
-
+```
 
 pirms tam palaižot (aizstāt vērtības YOUR_GITHUB_USERNAME un YOUR_GITHUB_TOKEN ar savām)
-'''
+```
 echo YOUR_GITHUB_TOKEN | docker login ghcr.io -u YOUR_GITHUB_USERNAME --password-stdin
-'''
+```
 
 
 ## Kā darbināt ssh tuneli:
