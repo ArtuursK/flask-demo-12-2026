@@ -13,11 +13,11 @@ def receive_sensor_data():
     print(data)
 
     mydb = mysql.connector.connect(
-        host="localhost",
+        host="datubaze2",
         user="root",
         password="root",
         database="mydb",
-        port="3308"
+        port="3306"
     )
 
     mycursor = mydb.cursor()
