@@ -7,11 +7,11 @@ docker-compose.yml failā ielikt klāt
 services:
 .....
   flask:
-    image: ghcr.io/artuursk/app:latest
+    image: ghcr.io/<github username>/<repo-name>:main
     container_name: flask-app
     restart: unless-stopped
     ports:
-      - "5001:5000"
+      - "5000:5000"
 ```
 
 pirms tam palaižot (aizstāt vērtības YOUR_GITHUB_USERNAME un YOUR_GITHUB_TOKEN ar savām)
